@@ -7,8 +7,10 @@ Hey, did you know? This project was actually cooked up during my first year, fir
 
 ## **Credits:**
 
-Game Development: [Your Name]
+Game Developmer: Andrei Louise Amrinto
+
 Game Engine: Godot Engine 4.0 (godotengine.org)
+
 Game Assets:
 A huge shoutout to the amazing creators of the assets used in this project. Your work has seriously leveled up the game's visuals and made it a blast to play! 🎨
 
