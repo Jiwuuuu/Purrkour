@@ -7,7 +7,7 @@ Hey, did you know? This project was actually cooked up during my first year, fir
 
 ## **Credits:**
 
-Game Developmer: Andrei Louise Amrinto
+Game Developer: Andrei Louise Amrinto
 
 Game Engine: Godot Engine 4.0 (godotengine.org)
 
