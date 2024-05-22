@@ -17,4 +17,8 @@ A huge shoutout to the amazing creators of the assets used in this project. Your
 ## **Contribute:**
 Feel free to fork the repository and submit pull requests. Contributions of all kinds are welcome!
 
-![Screenshot 2024-05-22 172714](https://github.com/Jiwuuuu/Purrkour/assets/142757244/ceb296ca-f808-42cb-9a2d-351f82e81b70)
+![Screenshot 2024-05-22 173409](https://github.com/Jiwuuuu/Purrkour/assets/142757244/86d6de65-80cf-49c1-b1d2-b3c27e11eee6)
+
+![Screenshot 2024-05-22 173418](https://github.com/Jiwuuuu/Purrkour/assets/142757244/33ea67d5-db8f-4326-94e2-26bd4f450b20)
+
+![short-gameplay](https://github.com/Jiwuuuu/Purrkour/assets/142757244/e46e8782-fd37-480b-87ac-5237dc8a7d66)
