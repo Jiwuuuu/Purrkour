@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxabuqo8uve5o"]
+
+[ext_resource type="Script" path="res://Parallax Background/SummerBG.gd" id="1_gby1m"]
+[ext_resource type="Texture2D" uid="uid://c6wsa8b1anxrs" path="res://Parallax Background/summer8/1.png" id="2_7e2m7"]
+[ext_resource type="Texture2D" uid="uid://d2ata124csakt" path="res://Parallax Background/summer8/2.png" id="3_ut4kp"]
+[ext_resource type="Texture2D" uid="uid://cije8c3v3vmw" path="res://Parallax Background/summer8/3.png" id="4_dr68o"]
+[ext_resource type="Texture2D" uid="uid://bkmqrufd50j87" path="res://Parallax Background/summer8/4.png" id="5_84dtq"]
+
+[node name="SummerBG" type="ParallaxBackground"]
+script = ExtResource("1_gby1m")
+metadata/_edit_vertical_guides_ = []
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(239.889, 134.75)
+scale = Vector2(0.834877, 0.834877)
+texture = ExtResource("2_7e2m7")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(239.889, 134.75)
+scale = Vector2(0.834877, 0.834877)
+texture = ExtResource("3_ut4kp")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(239.889, 134.75)
+scale = Vector2(0.834877, 0.834877)
+texture = ExtResource("4_dr68o")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(239.889, 134.75)
+scale = Vector2(0.834877, 0.834877)
+texture = ExtResource("5_84dtq")

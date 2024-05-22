@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg4w51w52ac76"]
+
+[ext_resource type="Texture2D" uid="uid://dmg6nld1ua1g5" path="res://Background/pixel-sky-backgrounds-byCaniaEast/fajrbackground.png" id="1_qrg35"]
+
+[node name="MenuBg1" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+position = Vector2(240, 136)
+scale = Vector2(0.46875, 0.354167)
+texture = ExtResource("1_qrg35")

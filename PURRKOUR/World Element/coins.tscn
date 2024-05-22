@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bi7b2dfu7dc1h"]
+
+[ext_resource type="Script" path="res://World Element/Coins.gd" id="1_uamvm"]
+[ext_resource type="Texture2D" uid="uid://808ci3u7egme" path="res://PURRKOUR ASSETS/TileMap/tilemap_packed.png" id="2_if77h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ne1mg"]
+atlas = ExtResource("2_if77h")
+region = Rect2(198, 126, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dc5gi"]
+atlas = ExtResource("2_if77h")
+region = Rect2(216, 126, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tkqjc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ne1mg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dc5gi")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b17ax"]
+size = Vector2(12, 12)
+
+[node name="Coins" type="Node2D"]
+script = ExtResource("1_uamvm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_tkqjc")
+animation = &"Idle"
+frame_progress = 0.809843
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_b17ax")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

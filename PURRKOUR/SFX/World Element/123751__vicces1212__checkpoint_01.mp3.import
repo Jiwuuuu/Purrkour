@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxpxclp3t6lhh"
+path="res://.godot/imported/123751__vicces1212__checkpoint_01.mp3-5a73bf5ff8b32191a0202c46b53eafa8.mp3str"
+
+[deps]
+
+source_file="res://SFX/World Element/123751__vicces1212__checkpoint_01.mp3"
+dest_files=["res://.godot/imported/123751__vicces1212__checkpoint_01.mp3-5a73bf5ff8b32191a0202c46b53eafa8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

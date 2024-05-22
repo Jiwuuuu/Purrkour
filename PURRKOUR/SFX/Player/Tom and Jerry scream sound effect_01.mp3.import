@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fiyebaq4fq4w"
+path="res://.godot/imported/Tom and Jerry scream sound effect_01.mp3-77934f6447b9bb87d60087e25c82dcd3.mp3str"
+
+[deps]
+
+source_file="res://SFX/Player/Tom and Jerry scream sound effect_01.mp3"
+dest_files=["res://.godot/imported/Tom and Jerry scream sound effect_01.mp3-77934f6447b9bb87d60087e25c82dcd3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

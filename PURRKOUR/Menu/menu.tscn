@@ -1,0 +1,188 @@
+[gd_scene load_steps=14 format=3 uid="uid://bofhysic0k3br"]
+
+[ext_resource type="Script" path="res://Menu/menu.gd" id="1_8h530"]
+[ext_resource type="FontFile" uid="uid://b32opiy5oh0j4" path="res://Font/Minecraft.ttf" id="2_du6as"]
+[ext_resource type="Script" path="res://Parallax Background/SnowyMountain.gd" id="5_8fxmx"]
+[ext_resource type="Texture2D" uid="uid://dsa270xli8j50" path="res://Glacial-mountains-parallax-background_vnitti/Layers/sky_lightened.png" id="6_77048"]
+[ext_resource type="Texture2D" uid="uid://bvcb3mwtfo1k8" path="res://Glacial-mountains-parallax-background_vnitti/Layers/clouds_bg.png" id="7_uydmc"]
+[ext_resource type="Texture2D" uid="uid://2t87j6vpwi4b" path="res://Glacial-mountains-parallax-background_vnitti/Layers/glacial_mountains_lightened.png" id="8_rlh1g"]
+[ext_resource type="Texture2D" uid="uid://ddiy07uers5h2" path="res://Glacial-mountains-parallax-background_vnitti/Layers/clouds_mg_3.png" id="9_bmdjb"]
+[ext_resource type="Texture2D" uid="uid://c8h6nc17vwqb7" path="res://Glacial-mountains-parallax-background_vnitti/Layers/clouds_mg_2.png" id="10_k8mbh"]
+[ext_resource type="Texture2D" uid="uid://287i5lbfs0r7" path="res://Glacial-mountains-parallax-background_vnitti/Layers/cloud_lonely.png" id="11_6q6h0"]
+[ext_resource type="Texture2D" uid="uid://ct6qpa0tjq5nd" path="res://Glacial-mountains-parallax-background_vnitti/Layers/clouds_mg_1.png" id="12_ctmbg"]
+[ext_resource type="AudioStream" uid="uid://cdxth3c4aca1w" path="res://SFX/Menu/game-start-6104_01.mp3" id="12_n3y7a"]
+[ext_resource type="Texture2D" uid="uid://2srxn2kyx7il" path="res://Menu/d.png" id="13_1ag1j"]
+[ext_resource type="AudioStream" uid="uid://dt8wqxoca8dvi" path="res://Sound Effects/Background SoundTrack/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3" id="13_yl65f"]
+
+[node name="MENU" type="Node2D"]
+script = ExtResource("1_8h530")
+metadata/_edit_vertical_guides_ = [240.0, 120.0, 180.0, 60.0, 90.0, 30.0, 150.0, 210.0, 270.0, 300.0, 330.0, 360.0, 390.0, 420.0, 450.0, 480.0]
+metadata/_edit_horizontal_guides_ = [135.0, 67.0, 138.0, 145.0]
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.45098, 0.984314, 0.933333, 1)
+offset_left = -39.0
+offset_top = -32.0
+offset_right = 505.0
+offset_bottom = 291.0
+
+[node name="Play" type="Button" parent="."]
+texture_filter = 1
+offset_left = 161.0
+offset_top = 120.0
+offset_right = 319.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.678431, 0.964706, 0.254902, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_du6as")
+text = "PLAY"
+flat = true
+
+[node name="About" type="Button" parent="."]
+texture_filter = 1
+offset_left = 161.0
+offset_top = 151.0
+offset_right = 319.0
+offset_bottom = 175.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.678431, 0.964706, 0.254902, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_du6as")
+text = "ABOUT"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 161.0
+offset_top = 182.0
+offset_right = 319.0
+offset_bottom = 206.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0.592157, 0.65098, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_du6as")
+text = "QUIT?"
+flat = true
+
+[node name="SnowyMountain" type="ParallaxBackground" parent="."]
+script = ExtResource("5_8fxmx")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("6_77048")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer2"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("7_uydmc")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer3"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("8_rlh1g")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer4"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("9_bmdjb")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer5"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("10_k8mbh")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer6"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("11_6q6h0")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="SnowyMountain"]
+texture_filter = 1
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="SnowyMountain/ParallaxLayer7"]
+position = Vector2(240, 135)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("12_ctmbg")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(480, -7.95)
+offset_top = 51.0
+offset_right = 480.0
+offset_bottom = 102.0
+
+[node name="Title" type="Label" parent="CenterContainer"]
+texture_filter = 1
+texture_repeat = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0.905882, 0.772549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.576471, 0.521569, 0.67451, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("2_du6as")
+theme_override_font_sizes/font_size = 48
+text = "Purrkour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
+
+[node name="StartSFX" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("12_n3y7a")
+
+[node name="BgSFX" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("13_yl65f")
+volume_db = -12.903
+
+[node name="D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(147, 43)
+texture = ExtResource("13_1ag1j")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="About" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

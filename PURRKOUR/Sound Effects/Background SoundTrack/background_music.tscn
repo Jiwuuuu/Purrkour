@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://e5qgefyk510c"]
+
+[ext_resource type="AudioStream" uid="uid://c8ioef8hhomye" path="res://Sound Effects/Background SoundTrack/nintendogs + cats Music – Café Petrov 【Play Area】.mp3" id="1_2k0pl"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer"]
+stream = ExtResource("1_2k0pl")
+volume_db = -20.0
+autoplay = true

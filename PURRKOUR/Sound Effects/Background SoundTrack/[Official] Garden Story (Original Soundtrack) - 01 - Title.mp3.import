@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt8wqxoca8dvi"
+path="res://.godot/imported/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3-8636fe66c2c0b95ac254adaaf74c7952.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/Background SoundTrack/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3"
+dest_files=["res://.godot/imported/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3-8636fe66c2c0b95ac254adaaf74c7952.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

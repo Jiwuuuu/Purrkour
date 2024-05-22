@@ -1,0 +1,103 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1fcgpu22qw1l"]
+
+[ext_resource type="Script" path="res://Menu/gameover.gd" id="1_3ctjb"]
+[ext_resource type="FontFile" uid="uid://b32opiy5oh0j4" path="res://Font/Minecraft.ttf" id="2_ahk2x"]
+[ext_resource type="PackedScene" uid="uid://t2722tbumqau" path="res://Parallax Background/snowy_mountain.tscn" id="2_oe63u"]
+[ext_resource type="AudioStream" uid="uid://cdxth3c4aca1w" path="res://SFX/Menu/game-start-6104_01.mp3" id="4_2jmvf"]
+[ext_resource type="AudioStream" uid="uid://dt8wqxoca8dvi" path="res://Sound Effects/Background SoundTrack/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3" id="5_itw58"]
+
+[node name="GAMEOVER" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3ctjb")
+metadata/_edit_horizontal_guides_ = [186.0, 192.0, 222.0, 216.0]
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.45098, 0.984314, 0.933333, 1)
+layout_mode = 0
+offset_left = -39.0
+offset_top = -32.0
+offset_right = 505.0
+offset_bottom = 291.0
+
+[node name="SnowyMountain" parent="." instance=ExtResource("2_oe63u")]
+
+[node name="Restart" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 161.0
+offset_top = 128.0
+offset_right = 319.0
+offset_bottom = 152.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.678431, 0.964706, 0.254902, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_ahk2x")
+text = "TRY AGAIN?"
+flat = true
+
+[node name="MainMenu" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 161.0
+offset_top = 158.0
+offset_right = 319.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.678431, 0.964706, 0.254902, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_ahk2x")
+text = "MAIN MENU?"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 2
+layout_mode = 0
+offset_left = 161.0
+offset_top = 188.0
+offset_right = 319.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0.592157, 0.65098, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_ahk2x")
+text = "QUIT?"
+flat = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(480, -7.95)
+layout_mode = 0
+offset_top = 64.0
+offset_right = 480.0
+offset_bottom = 115.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+texture_filter = 1
+texture_repeat = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.592157, 0.65098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("2_ahk2x")
+theme_override_font_sizes/font_size = 48
+text = "GAMEOVER :("
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
+
+[node name="StartSFX" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("4_2jmvf")
+
+[node name="BgSFX" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("5_itw58")
+volume_db = -12.903
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

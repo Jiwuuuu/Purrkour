@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6jl378h1q5le"
+path="res://.godot/imported/Sound Effect Tom scream_01.mp3-6f25c01c436bbde1ee5c49cbaee3ce3d.mp3str"
+
+[deps]
+
+source_file="res://SFX/Player/Sound Effect Tom scream_01.mp3"
+dest_files=["res://.godot/imported/Sound Effect Tom scream_01.mp3-6f25c01c436bbde1ee5c49cbaee3ce3d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

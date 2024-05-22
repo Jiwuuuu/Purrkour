@@ -1,0 +1,159 @@
+[gd_scene load_steps=12 format=3 uid="uid://fkshdp2ays0a"]
+
+[ext_resource type="PackedScene" uid="uid://t2722tbumqau" path="res://Parallax Background/snowy_mountain.tscn" id="1_q03h7"]
+[ext_resource type="Script" path="res://Menu/about_2.gd" id="1_s8ci4"]
+[ext_resource type="AudioStream" uid="uid://dt8wqxoca8dvi" path="res://Sound Effects/Background SoundTrack/[Official] Garden Story (Original Soundtrack) - 01 - Title.mp3" id="2_qygsy"]
+[ext_resource type="AudioStream" uid="uid://cdxth3c4aca1w" path="res://SFX/Menu/game-start-6104_01.mp3" id="3_chkel"]
+[ext_resource type="FontFile" uid="uid://b32opiy5oh0j4" path="res://Font/Minecraft.ttf" id="4_xr41h"]
+[ext_resource type="Texture2D" uid="uid://c7xgfetwiwv16" path="res://Menu/377307558_863831428803890_4288021568701882593_n.jpg" id="5_fglhg"]
+[ext_resource type="Texture2D" uid="uid://c2pgm4qcwyb21" path="res://Menu/403973714_870511521284372_6270162726677352628_n.jpg" id="6_13shp"]
+[ext_resource type="Texture2D" uid="uid://bkd7i0lujaylg" path="res://Menu/371538873_358018460053073_498823896018739164_n.jpg" id="7_dyk3x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_au3ke"]
+atlas = ExtResource("6_13shp")
+region = Rect2(0, 180, 1080, 1332)
+
+[sub_resource type="Animation" id="Animation_8r8j0"]
+resource_name = "slideshow"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.2, 7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_fglhg"), ExtResource("7_dyk3x"), SubResource("AtlasTexture_au3ke")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a6v7i"]
+_data = {
+"slideshow": SubResource("Animation_8r8j0")
+}
+
+[node name="About2" type="Node2D"]
+script = ExtResource("1_s8ci4")
+metadata/_edit_vertical_guides_ = [10.0, 11.0]
+
+[node name="SnowyMountain" parent="." instance=ExtResource("1_q03h7")]
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.45098, 0.984314, 0.933333, 1)
+offset_left = -19.0
+offset_top = -15.0
+offset_right = 495.0
+offset_bottom = 279.0
+
+[node name="BgSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_qygsy")
+volume_db = -12.903
+
+[node name="StartSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_chkel")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 55.0
+offset_bottom = 29.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+texture_filter = 1
+texture_repeat = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("4_xr41h")
+theme_override_font_sizes/font_size = 16
+text = "About"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 10.0
+offset_top = 49.0
+offset_right = 396.0
+offset_bottom = 68.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("4_xr41h")
+theme_override_font_sizes/font_size = 16
+text = "Inspiration: "
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 11.0
+offset_top = 84.0
+offset_right = 397.0
+offset_bottom = 198.0
+theme_override_colors/font_color = Color(1, 0.737255, 0.258824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("4_xr41h")
+theme_override_font_sizes/font_size = 16
+text = "MET TOSHI THE CAT!!
+
+TOSHI IS THE
+INSPIRATION 
+
+TOSHI SUPREMACY!
+💗💗💗💗💗💗💗"
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="."]
+texture_filter = 1
+offset_left = 11.0
+offset_top = 242.0
+offset_right = 140.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.678431, 0.964706, 0.254902, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("4_xr41h")
+text = "BACK TO MENU"
+flat = true
+
+[node name="3773075588638314288038904288021568701882593N" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(330, 144)
+scale = Vector2(0.251323, 0.251323)
+texture = ExtResource("5_fglhg")
+region_enabled = true
+region_rect = Rect2(0, 522, 1152, 756)
+
+[node name="Label5" type="Label" parent="."]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 49.0
+offset_top = 84.0
+offset_right = 121.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(1, 0.717647, 0.772549, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("4_xr41h")
+theme_override_font_sizes/font_size = 16
+text = "TOSHI "
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../3773075588638314288038904288021568701882593N")
+libraries = {
+"": SubResource("AnimationLibrary_a6v7i")
+}
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

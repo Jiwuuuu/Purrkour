@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhclf0vjwue6c"]
+
+[ext_resource type="Script" path="res://UI/heart_bar.gd" id="1_qikqx"]
+
+[node name="HeartBar" type="HBoxContainer"]
+theme_override_constants/separation = -1
+script = ExtResource("1_qikqx")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://bg4sf6erp4lar"]
+
+[ext_resource type="Script" path="res://Parallax Background/DuskMountain.gd" id="1_jjww4"]
+[ext_resource type="Texture2D" uid="uid://bwwp3101sxo3r" path="res://Parallax Background/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-bg.png" id="2_r7blp"]
+[ext_resource type="Texture2D" uid="uid://chkpv0yaclb5g" path="res://Parallax Background/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-mountains.png" id="3_1sfo2"]
+[ext_resource type="Texture2D" uid="uid://bc3hi3obem7vu" path="res://Parallax Background/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-montain-far.png" id="4_elpua"]
+[ext_resource type="Texture2D" uid="uid://c0km07bpc30ke" path="res://Parallax Background/parallax_mountain_pack/parallax_mountain_pack/layers/parallax-mountain-trees.png" id="5_muw0x"]
+
+[node name="DuskMountain" type="ParallaxBackground"]
+script = ExtResource("1_jjww4")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.76471, 1.6875)
+texture = ExtResource("2_r7blp")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.76471, 1.6875)
+texture = ExtResource("3_1sfo2")
+region_enabled = true
+region_rect = Rect2(0, 0, 272, 160)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.76471, 1.6875)
+texture = ExtResource("4_elpua")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture_filter = 1
+position = Vector2(240, 135)
+scale = Vector2(1.76471, 1.6875)
+texture = ExtResource("5_muw0x")
+region_enabled = true
+region_rect = Rect2(0, 0, 272, 160)

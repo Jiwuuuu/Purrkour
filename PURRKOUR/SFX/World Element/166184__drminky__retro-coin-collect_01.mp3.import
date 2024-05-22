@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnbutj41d3vfm"
+path="res://.godot/imported/166184__drminky__retro-coin-collect_01.mp3-ab2894814fe2ec8364ad4582ff8a2fbd.mp3str"
+
+[deps]
+
+source_file="res://SFX/World Element/166184__drminky__retro-coin-collect_01.mp3"
+dest_files=["res://.godot/imported/166184__drminky__retro-coin-collect_01.mp3-ab2894814fe2ec8364ad4582ff8a2fbd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

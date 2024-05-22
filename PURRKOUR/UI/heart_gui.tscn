@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck7dlut4mxjtx"]
+
+[ext_resource type="Texture2D" uid="uid://808ci3u7egme" path="res://PURRKOUR ASSETS/TileMap/tilemap_packed.png" id="1_dksbt"]
+[ext_resource type="Script" path="res://UI/heart_gui.gd" id="1_e7v48"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_gi8vx"]
+frame_0/texture = ExtResource("1_dksbt")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn75i"]
+atlas = SubResource("AnimatedTexture_gi8vx")
+region = Rect2(72, 36, 54, 18)
+
+[node name="HeartGui" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(18, 18)
+offset_right = 18.0
+offset_bottom = 17.0
+script = ExtResource("1_e7v48")
+
+[node name="Heart" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(9, 9)
+texture = SubResource("AtlasTexture_qn75i")
+hframes = 3
